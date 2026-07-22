@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Overview } from "@/sections/Overview.tsx";
 import { KeysLab } from "@/features/keys/KeysLab.tsx";
+import { ReadLab } from "@/features/read/ReadLab.tsx";
 
 interface Section {
   id: string;
@@ -13,7 +14,7 @@ interface Section {
 const SECTIONS: Section[] = [
   { id: "overview", num: "00", label: "Overview", element: <Overview /> },
   { id: "keys", num: "01", label: "Keys & Signing", element: <KeysLab /> },
-  { id: "read", num: "02", label: "Read", soon: "FE-2" },
+  { id: "read", num: "02", label: "Read", element: <ReadLab /> },
   { id: "tx", num: "03", label: "Transactions", soon: "FE-3" },
   { id: "indexer", num: "04", label: "Indexer (client)", soon: "FE-4" },
 ];

@@ -44,8 +44,8 @@ indexer.
 **Track A — frontend (in progress, published as it grows)**
 
 - ✅ `01` Keys & Signing — client-side cryptography: derive an address, hash, sign (EIP-191/712), verify. **Live now.**
-- 🚧 `02` Read — provider-neutral RPC reads of on-chain state, ABI decoding.
-- ⬜ `03` Transactions — build, estimate, sign, broadcast, and watch `pending → confirmed → finalized`.
+- ✅ `02` Read — provider-neutral RPC reads (block tip, balance, ERC-20 via ABI-decoded `eth_call`), with a swappable Simulated / Sepolia / local-node source. **Live now.**
+- 🚧 `03` Transactions — build, estimate, sign, broadcast, and watch `pending → confirmed → finalized`.
 - ⬜ `04` Indexer (client) — project events into an in-browser read model, and feel its limits.
 
 **Track B — backend (later)**
