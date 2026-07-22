@@ -1,0 +1,27 @@
+{
+  "name": "onchain-lab",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "A provider-neutral lab for the durable fundamentals of blockchain engineering: keys, signing, the transaction lifecycle, and on-chain/off-chain sync.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --noEmit"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "viem": "^2.55.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^4.7.0",
+    "typescript": "^7.0.2",
+    "vite": "^6.4.3"
+  }
+}
