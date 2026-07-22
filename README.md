@@ -1,5 +1,6 @@
 # onchain-lab
 
+[![Live demo](https://img.shields.io/badge/live%20demo-open-16c784?style=flat-square)](https://campustudio.github.io/onchain-lab/)
 ![React](https://img.shields.io/badge/React-19-4c8dff?style=flat-square)
 ![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?style=flat-square)
 ![Vite](https://img.shields.io/badge/Vite-6-646cff?style=flat-square)
@@ -10,6 +11,9 @@ A hands-on, **provider-neutral** reference for the parts of blockchain engineeri
 change. Chains, L2s, wallet SDKs, and client libraries churn constantly; the mental model
 underneath them does not. onchain-lab demonstrates that durable core end to end — and treats every
 concrete chain or library as a replaceable **vehicle** kept behind a port.
+
+> **[▶ Open the live demo](https://campustudio.github.io/onchain-lab/)** — deployed to GitHub Pages
+> on every push to `main`.
 
 > **Testnet only. No secrets.** The lab never touches mainnet value, never asks for a real private
 > key or seed phrase, and runs with zero configuration.
@@ -37,12 +41,12 @@ _only once_ the client-side approach visibly hits its limits (deep history, pers
 reliability) — the same evolution real dApps go through, from direct RPC calls to a dedicated
 indexer.
 
-**Track A — frontend (in progress)**
+**Track A — frontend (in progress, published as it grows)**
 
-- `01` Keys & Signing — client-side cryptography: derive an address, hash, sign (EIP-191/712), verify.
-- `02` Read — provider-neutral RPC reads of on-chain state, ABI decoding.
-- `03` Transactions — build, estimate, sign, broadcast, and watch `pending → confirmed → finalized`.
-- `04` Indexer (client) — project events into an in-browser read model, and feel its limits.
+- ✅ `01` Keys & Signing — client-side cryptography: derive an address, hash, sign (EIP-191/712), verify. **Live now.**
+- 🚧 `02` Read — provider-neutral RPC reads of on-chain state, ABI decoding.
+- ⬜ `03` Transactions — build, estimate, sign, broadcast, and watch `pending → confirmed → finalized`.
+- ⬜ `04` Indexer (client) — project events into an in-browser read model, and feel its limits.
 
 **Track B — backend (later)**
 
