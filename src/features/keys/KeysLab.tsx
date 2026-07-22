@@ -18,6 +18,7 @@ import {
   type OrderMessage,
 } from "@/lib/crypto.ts";
 import { ValueRow, Verdict } from "@/components/ui.tsx";
+import { Pipeline } from "@/components/diagrams/Pipeline.tsx";
 
 export function KeysLab() {
   const [identity, setIdentity] = useState<Identity | null>(null);
@@ -92,6 +93,29 @@ function IdentityPanel({
             {revealKey ? "Hide private key" : "Reveal private key"}
           </button>
         )}
+      </div>
+      <div style={{ marginTop: 16 }}>
+        <Pipeline
+          flowing={!!identity}
+          steps={[
+            {
+              title: "private key",
+              value: identity ? (revealKey ? shorten(identity.privateKey, 10, 6) : "•••••• (secret)") : "",
+              note: "32 random bytes",
+            },
+            {
+              title: "→ secp256k1 →  public key",
+              value: identity ? shorten(identity.publicKey, 10, 6) : "",
+              note: "elliptic-curve point",
+            },
+            {
+              title: "→ keccak, last 20 bytes →  address",
+              value: identity ? shorten(identity.address, 10, 6) : "",
+              note: "your on-chain identity",
+              state: identity ? "ok" : "idle",
+            },
+          ]}
+        />
       </div>
       {identity && (
         <div style={{ marginTop: 16 }}>
@@ -236,6 +260,25 @@ function PersonalSignPanel({ identity }: { identity: Identity | null }) {
         <button className="btn primary" onClick={sign} disabled={!identity || busy || !message}>
           Sign message
         </button>
+      </div>
+      <div style={{ marginTop: 14 }}>
+        <Pipeline
+          flowing={!!signature}
+          steps={[
+            { title: "message", value: signedMessage || message, note: "the exact bytes" },
+            {
+              title: "→ sign(privkey) →  signature",
+              value: signature ? shorten(signature, 10, 6) : "",
+              note: "proves control of the key",
+            },
+            {
+              title: "→ ecrecover(msg, sig) →  signer",
+              value: recovered ? shorten(recovered, 8, 6) : "",
+              note: "no key or server needed",
+              state: recovered ? (match ? "ok" : "bad") : "idle",
+            },
+          ]}
+        />
       </div>
       <div style={{ marginTop: 14 }}>
         <ValueRow label="EIP-191 digest (what is actually signed)" value={digest} />
