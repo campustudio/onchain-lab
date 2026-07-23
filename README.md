@@ -8,7 +8,7 @@
 ![Secrets](https://img.shields.io/badge/secrets-none-16c784?style=flat-square)
 
 <a href="https://campustudio.github.io/onchain-lab/">
-  <img src="https://campustudio.github.io/onchain-lab/preview.svg?v=1" alt="onchain-lab — durable blockchain fundamentals: live chain, key derivation, EIP-191/712 signing" width="100%" />
+  <img src="https://campustudio.github.io/onchain-lab/preview.svg?v=2" alt="onchain-lab — durable blockchain fundamentals: live chain, key derivation, EIP-191/712 signing" width="100%" />
 </a>
 
 A hands-on, **provider-neutral** reference for the parts of blockchain engineering that _don't_

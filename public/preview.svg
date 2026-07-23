@@ -23,11 +23,10 @@
   <rect width="1200" height="630" fill="url(#glow)"/>
   <rect width="1200" height="630" fill="url(#glow2)"/>
 
-  <!-- Left: identity -->
   <text x="72" y="128" fill="#16c784" font-size="20" letter-spacing="3">DURABLE BLOCKCHAIN FUNDAMENTALS</text>
   <text x="70" y="210" fill="url(#title)" font-size="72" font-weight="700">onchain-lab</text>
-  <text x="72" y="268" fill="#9aa7b8" font-size="22">Keys · signing · tx lifecycle · on-chain / off-chain sync</text>
-  <text x="72" y="304" fill="#6b7688" font-size="18">Provider-neutral · testnet only · no secrets</text>
+  <text x="72" y="268" fill="#9aa7b8" font-size="22">Keys &#183; signing &#183; tx lifecycle &#183; on-chain / off-chain sync</text>
+  <text x="72" y="304" fill="#6b7688" font-size="18">Provider-neutral &#183; testnet only &#183; no secrets</text>
 
   <g font-size="18" fill="#e6edf3">
     <rect x="72" y="360" width="108" height="38" rx="19" fill="rgba(255,255,255,0.03)" stroke="#2b3441"/>
@@ -42,11 +41,9 @@
 
   <text x="72" y="520" fill="#6b7688" font-size="18">github.com/campustudio/onchain-lab</text>
 
-  <!-- Right: stylized live-chain + key pipeline mini UI -->
   <g transform="translate(760,96)">
     <rect x="0" y="0" width="380" height="440" rx="16" fill="#121722" stroke="#232b3a"/>
 
-    <!-- mempool strip -->
     <text x="20" y="34" fill="#6b7688" font-size="13" letter-spacing="1">MEMPOOL</text>
     <rect x="20" y="48" width="14" height="14" rx="3" fill="rgba(255,180,84,0.2)" stroke="#ffb454"/>
     <rect x="40" y="48" width="14" height="14" rx="3" fill="rgba(255,180,84,0.2)" stroke="#ffb454"/>
@@ -55,53 +52,47 @@
     <rect x="100" y="48" width="14" height="14" rx="3" fill="rgba(255,180,84,0.2)" stroke="#ffb454"/>
     <text x="360" y="58" fill="#ffb454" font-size="12" text-anchor="end">5 tx</text>
 
-    <!-- chain blocks -->
     <g transform="translate(20,90)">
-      <!-- block finalized -->
       <rect x="0" y="0" width="96" height="78" rx="10" fill="rgba(22,199,132,0.08)" stroke="#16c784"/>
       <text x="12" y="24" fill="#e6edf3" font-size="14" font-weight="700">#6400003</text>
-      <text x="12" y="44" fill="#6b7688" font-size="11">0xa3f1&9c</text>
-      <text x="12" y="64" fill="#16c784" font-size="11">final · 4c</text>
+      <text x="12" y="44" fill="#6b7688" font-size="11">0xa3f1...9c</text>
+      <text x="12" y="64" fill="#16c784" font-size="11">final &#183; 4c</text>
 
       <line x1="96" y1="39" x2="116" y2="39" stroke="#4c8dff" stroke-width="2"/>
 
-      <!-- block confirming -->
       <rect x="116" y="0" width="96" height="78" rx="10" fill="#1a2130" stroke="#4c8dff"/>
       <text x="128" y="24" fill="#e6edf3" font-size="14" font-weight="700">#6400004</text>
-      <text x="128" y="44" fill="#6b7688" font-size="11">0x7b20&e1</text>
+      <text x="128" y="44" fill="#6b7688" font-size="11">0x7b20...e1</text>
       <text x="128" y="64" fill="#4c8dff" font-size="11">2 conf</text>
 
       <line x1="212" y1="39" x2="232" y2="39" stroke="#4c8dff" stroke-width="2"/>
 
-      <!-- tip -->
       <rect x="232" y="0" width="96" height="78" rx="10" fill="rgba(255,180,84,0.08)" stroke="#ffb454"/>
       <text x="244" y="24" fill="#e6edf3" font-size="14" font-weight="700">#6400005</text>
-      <text x="244" y="44" fill="#6b7688" font-size="11">0x91cd&44</text>
+      <text x="244" y="44" fill="#6b7688" font-size="11">0x91cd...44</text>
       <text x="244" y="64" fill="#ffb454" font-size="11">new tip</text>
     </g>
 
-    <!-- key derivation pipeline -->
-    <text x="20" y="210" fill="#6b7688" font-size="13" letter-spacing="1">KEY ’ ADDRESS</text>
+    <text x="20" y="210" fill="#6b7688" font-size="13" letter-spacing="1">KEY &#8594; ADDRESS</text>
     <rect x="20" y="226" width="100" height="56" rx="10" fill="#0b0e14" stroke="#33405a"/>
     <text x="70" y="250" fill="#9aa7b8" font-size="11" text-anchor="middle">private key</text>
-    <text x="70" y="268" fill="#e6edf3" font-size="12" text-anchor="middle">""""""</text>
+    <text x="70" y="268" fill="#e6edf3" font-size="12" text-anchor="middle">......</text>
 
     <polygon points="128,254 140,254 140,248 152,260 140,272 140,266 128,266" fill="#4c8dff"/>
 
     <rect x="160" y="226" width="100" height="56" rx="10" fill="#0b0e14" stroke="#33405a"/>
     <text x="210" y="250" fill="#9aa7b8" font-size="11" text-anchor="middle">public key</text>
-    <text x="210" y="268" fill="#e6edf3" font-size="12" text-anchor="middle">0x04ab&</text>
+    <text x="210" y="268" fill="#e6edf3" font-size="12" text-anchor="middle">0x04ab...</text>
 
     <polygon points="268,254 280,254 280,248 292,260 280,272 280,266 268,266" fill="#4c8dff"/>
 
     <rect x="300" y="226" width="56" height="56" rx="10" fill="rgba(22,199,132,0.08)" stroke="#16c784"/>
     <text x="328" y="250" fill="#9aa7b8" font-size="10" text-anchor="middle">addr</text>
-    <text x="328" y="268" fill="#16c784" font-size="11" text-anchor="middle">0x39&</text>
+    <text x="328" y="268" fill="#16c784" font-size="11" text-anchor="middle">0x39...</text>
 
-    <!-- eip-712 / sign row -->
     <text x="20" y="330" fill="#6b7688" font-size="13" letter-spacing="1">EIP-191 / EIP-712</text>
     <rect x="20" y="346" width="340" height="64" rx="10" fill="#0b0e14" stroke="#232b3a"/>
-    <text x="36" y="374" fill="#9aa7b8" font-size="13">sign ’ ecrecover ’ match</text>
-    <text x="36" y="396" fill="#16c784" font-size="13">signature verified · no server required</text>
+    <text x="36" y="374" fill="#9aa7b8" font-size="13">sign &#8594; ecrecover &#8594; match</text>
+    <text x="36" y="396" fill="#16c784" font-size="13">signature verified &#183; no server required</text>
   </g>
 </svg>
