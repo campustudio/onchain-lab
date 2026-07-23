@@ -7,6 +7,10 @@
 ![Network](https://img.shields.io/badge/network-testnet%20only-16c784?style=flat-square)
 ![Secrets](https://img.shields.io/badge/secrets-none-16c784?style=flat-square)
 
+<a href="https://campustudio.github.io/onchain-lab/">
+  <img src="https://campustudio.github.io/onchain-lab/preview.svg?v=1" alt="onchain-lab — durable blockchain fundamentals: live chain, key derivation, EIP-191/712 signing" width="100%" />
+</a>
+
 A hands-on, **provider-neutral** reference for the parts of blockchain engineering that _don't_
 change. Chains, L2s, wallet SDKs, and client libraries churn constantly; the mental model
 underneath them does not. onchain-lab demonstrates that durable core end to end — and treats every
